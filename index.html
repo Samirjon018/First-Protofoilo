@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samirjon - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="site-container">
+            
+          <header class="navbar">
+    <img src="./logotip-modified.png" alt="Logo" class="logo">
+    
+    <div class="buttons">
+        <a href="#home"><button>Home</button></a>
+        <a href="#about"><button>About</button></a>
+        
+        <!-- Portfolio Dropdown -->
+        <div class="portfolio-dropdown">
+            <button class="dropdown-btn">Portfolio ▾</button>
+            <div class="dropdown-content">
+                <a href="https://apex-five-psi.vercel.app/" target="_blank">🔥 Trade Login Page</a>
+                <a href="https://apex-five-psi.vercel.app/" target="_blank">📊 Dashboard App</a>
+                <!-- Yangi loyihalar bo'lsa, shu yerga qo'shasiz -->
+            </div>
+        </div>
+
+        <a href="#gallery"><button>Gallery</button></a>
+        <a href="#contact"><button>Contact</button></a>
+        
+        <!-- Dark/Light rejim tugmasi -->
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+    </div>
+</header>
+
+            <!-- Asosiy tanishuv qismi (Hero Section) -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="content">
+                        <h1>I am Samirjon</h1>
+                        <h2>I am currently Web Developer<br>
+                            passionate about learning<br>
+                            new technologies</h2>
+                    </div>
+                    
+                    <div class="icons">
+                        <img src="./twitter (2).png" alt="Twitter"> 
+                        <img src="./instagram.png" alt="Instagram"> 
+                        <img src="./social.png" alt="Social"> 
+                        <img src="./global.png" alt="Global">
+                    </div>
+                        
+                    <div class="center-button3">
+    <a href="https://github.com/Samirjon018" target="_blank" class="work-btn">
+        See My Work 🚀
+    </a>
+</div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="./photo1.png" alt="Samirjon Photo">
+                </div>
+            </section>
+
+            <!-- Statistika -->
+            <section class="stats-container">
+                <div class="stat-card">
+                    <h2 class="stat-number">100k+</h2>
+                    <p class="stat-label">Happy</p>
+                </div>
+               
+                <div class="stat-card">
+                    <h2 class="stat-number">100k+</h2>
+                    <p class="stat-label">Ticket</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 class="stat-number">9.5/10</h2>
+                    <p class="stat-label">Average Rating</p>
+                </div>
+            </section>
+
+            <!-- About Me -->
+            <section class="about-wrapper">
+                <div class="about-image">
+                    <img src="./photo2.png" alt="Samirjon About Image">
+                </div>
+
+                <div class="centr">
+                    <div class="left-banner">
+                        <h3>About Me</h3>
+                        <h1>I am Full-stack Web <br>Developer<br></h1>
+                        <p>About learning. I speak JavaScript, HTML, CSS, and Node.js.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Check My Photo bo'limi -->
+            <section class="photo-section">
+                <div class="photo-header">
+                    <h3>Gallery</h3>
+                    <h2>Check The Photo</h2>
+                    <p>Mening eng sara ishlarim va fotolarim bilan tanishing</p>
+                </div>
+
+                <div class="photo-grid">
+                    <div class="photo-card">
+                        <img src="../apexsite.png" alt="Photo 1">
+                        <div class="photo-overlay">
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="photo-card">
+                        <img src="./language.png" alt="Photo 2">
+                        <div class="photo-overlay">
+                            <span>Development</span>
+                        </div>
+                    </div>
+
+                    <div class="photo-card">
+                        <img src="./Sertifika.png" alt="Photo 3">
+                        <div class="photo-overlay">
+                            <span>Creative</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Rejimni o'zgartiruvchi JavaScript kodi -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        
+        // Oldin tanlangan rej userni eslab qolish uchun (localStorage)
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeToggleBtn.textContent = '☀️';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.textContent = '☀️';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.textContent = '🌙';
+            }
+        });
+    </script>   
+
+
+
+
+
+<!-- Contact Section (Aloqa bo'limi) -->
+<section id="contact" class="contact-section">
+    <div class="contact-card">
+        <h3 class="contact-subtitle">Get In Touch</h3>
+        <h2 class="contact-title">Contact Me</h2>
+        <p class="contact-desc">
+            Savollaringiz bo'lsa yoki birgalikda loyiha ustida ishlamoqchi bo'lsangiz, men bilan bog'laning!
+        </p>
+
+        <div class="contact-details">
+            <a href="mailto:abdurakhimov.069@gmail.com" class="contact-item">
+                <span class="contact-icon">📧</span>
+                <span>abdurakhimov.069@gmail.com</span>
+            </a>
+            <a href="https://t.me/your_telegram_username" target="_blank" class="contact-item">
+                <span class="contact-icon">✈️️</span>
+                <span>Telegram: @Samirjon018</span>
+            </a>
+           
+        </div>
+
+        <div class="contact-action">
+            <a href="mailto:abdurakhimov.069@gmail.com" class="work-btn">
+                Xabar Yuborish 📩
+            </a>
+        </div>
+    </div>
+</section>
+</div>
+</body>
+</html>

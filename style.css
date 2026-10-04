@@ -1,0 +1,604 @@
+/* Umumiy sozlamalar */
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f9fafb;
+}
+
+main {
+    display: flex;
+    justify-content: center; /* Hamma narsani ekanning o'rtasiga keltiradi */
+    width: 100%;
+}
+
+/* Katta ekranlarda juda chetga chiqib ketishining oldini oluvchi konteyner */
+.site-container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+/* Header va Navigatsiya */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    color: blue;
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    background: #ffffff; 
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #eff6ff;
+}
+
+/* Hero qismi */
+.hero-section {
+    margin-top: 40px;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #4b5563;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* See My Work tugmasi */
+.center-button3 {
+    margin-top: 30px;
+}
+
+.work-btn {
+    color: aliceblue;
+    background: blueviolet;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Statistika konteyneri */
+.stats-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #f4f4f4;
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 130px;
+    max-width: 180px;
+}
+
+.stat-number {
+    color: #00bcd4;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    color: #00bcd4;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+  
+/* Oxirgi About Me (O'ng tomondagi banner) */
+.centr {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.left-banner {
+    text-align: right;
+    max-width: 600px;
+}
+
+.left-banner h3 {
+    font-size: 18px;
+    color: #4f46e5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.left-banner h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.left-banner p {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin: 0;
+}
+/* Rasm va matnni yonma-yon turishini ta'minlaydigan umumiy wrapper */
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+/* Chap tarafdagi rasm divi */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px; /* Oldin 450px edi — ixchamlashtirildi */
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Eski .centr ni moslab qo'yamiz (paddingi to'qnashib ketmasligi uchun) */
+.centr {
+    flex: 1;
+    padding: 0; 
+    display: block; /* Agar oldin flex bo'lsa, uni to'g'rilaymiz */
+}
+
+/* Eski left-banner matnlari o'ng tarafda chapga qarab turishi uchun */
+.left-banner {
+    text-align: left;
+}
+.icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.4s ease; /* Aylanish jarayoni silliq o'tishi uchun */
+}
+
+/* Sichqonchani olib kelganda aylanadigan holat */
+.icons img:hover {
+    transform: rotate(360deg) scale(1.2); /* 360 gradus aylanadi va biroz kattashadi */
+}
+/* Photo Section Dizayni */
+.photo-section {
+    width: 100%;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.photo-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photo-header h3 {
+    font-size: 16px;
+    color: #4f46e5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.photo-header h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.photo-header p {
+    font-size: 15px;
+    color: #4b5563;
+    margin: 0;
+}
+
+/* Rasmlar panjarasi (Grid) */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Rasmlar bir xil o'lchamda chiqishi uchun */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Rasmlarga sichqoncha borganda kattashish effekti */
+.photo-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Rasm ustiga kelganda chiqadigan yozuv foni */
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-overlay span {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    background: rgba(79, 70, 229, 0.8);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effekti */
+.photo-card:hover .photo-overlay {
+    opacity: 1;
+}
+
+.photo-card:hover .photo-overlay span {
+    transform: translateY(0);
+}
+/* ==========================================
+   HERO SECTION (Matn va Rasm yonma-yon)
+   ========================================== */
+.hero-section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 280px; /* Oldin 420px edi — ixchamlashtirildi */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: translateY(-8px);
+}
+
+/* Mobil ekranlar uchun moslashuvchanlik */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse; /* Mobilda rasm matn ostida yoki ustida chiroyli turishi uchun */
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+}
+
+/* ==========================================
+   DARK MODE STYLES
+   ========================================== */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark-mode button {
+    background: #1e293b;
+    color: #38bdf8;
+    border-color: #334155;
+}
+
+body.dark-mode button:hover {
+    background: #334155;
+}
+
+body.dark-mode .content h1,
+body.dark-mode .left-banner h1,
+body.dark-mode .photo-header h2 {
+    color: #f8fafc;
+}
+
+body.dark-mode .content h2,
+body.dark-mode .left-banner p,
+body.dark-mode .photo-header p {
+    color: #94a3b8;
+}
+
+body.dark-mode .stat-card {
+    background-color: #1e293b;
+}
+
+body.dark-mode .photo-card {
+    background: #1e293b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.theme-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+
+
+
+/* CSS style */
+.portfolio-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #1f2937;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f3f4f6;
+    color: #4f46e5;
+}
+
+.portfolio-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dark mode moslashuvi */
+body.dark-mode .dropdown-content {
+    background-color: #1e293b;
+}
+body.dark-mode .dropdown-content a {
+    color: #f8fafc;
+}
+body.dark-mode .dropdown-content a:hover {
+    background-color: #334155;
+    color: #38bdf8;
+}
+/* Link tugmaga aylanadi */
+.work-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    background: blueviolet;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.work-btn:hover {
+    transform: translateY(-2px);
+    background: #6d28d9;
+}
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Linklar atrofidagi to'rtburchak liniyani olib tashlash va joylashuv */
+.buttons a {
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   CONTACT SECTION (O'rtaga joylashuv va dizayn)
+   ========================================== */
+.contact-section {
+    width: 100%;
+    padding: 60px 0 80px 0;
+    display: flex;
+    justify-content: center; /* Gorizontal markazga keltiradi */
+    align-items: center;    /* Vertikal tekislaydi */
+    box-sizing: border-box;
+}
+
+.contact-card {
+    background: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.contact-subtitle {
+    font-size: 14px;
+    color: #4f46e5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 12px;
+}
+
+.contact-desc {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Aloqa usullari ro'yxati */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f3f4f6;
+    padding: 10px 18px;
+    border-radius: 12px;
+    color: #374151;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-item:hover {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.contact-icon {
+    font-size: 18px;
+}
+
+.contact-action {
+    margin-top: 10px;
+}
+
+/* ==========================================
+   CONTACT SECTION DARK MODE MOSLASHUVI
+   ========================================== */
+body.dark-mode .contact-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .contact-title {
+    color: #f8fafc;
+}
+
+body.dark-mode .contact-desc {
+    color: #94a3b8;
+}
+
+body.dark-mode .contact-item {
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+body.dark-mode .contact-item:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+
