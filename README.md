@@ -20,8 +20,6 @@ Ushbu loyiha mening front-end dasturlash bo'yicha egallagan ko'nikmalarim, amali
 
 ## 📸 Saytdan Ko'rinish (Preview)
 
-*(Bu yerga saytingiz skrinshotini yoki GIF formatidagi qisqa videosini joylang)*
-
 ![Portfolio Preview](protofoilio.png)
 
 ---
