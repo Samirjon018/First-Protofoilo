@@ -42,13 +42,3 @@ Ushbu loyiha mening front-end dasturlash bo'yicha egallagan ko'nikmalarim, amali
 | **CSS3 (Flexbox/Grid)** | Vizual uslublar va moslashuvchan (responsive) layout |
 | **JavaScript (ES6+)** | Interaktiv mantiq va Command Palette funksionali |
 | **GSAP (GreenSock)** | Professional darajadagi UI animatsiyalari |
-
----
-
-## 🚀 Mahalliy Kompyuterda Yurgizish
-
-Loyihani o'z kompyuteringizda ochib ko'rish uchun quyidagi qadamlarni bajaring:
-
-1. **Repozitoriyani klonlab oling:**
-   ```bash
-   git clone [https://github.com/Samirjon018/First-Protofoilio.git](https://github.com/Samirjon018/First-Protofoilio.git)
