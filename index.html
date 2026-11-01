@@ -9,34 +9,35 @@
 <body>
     <main>
         <div class="site-container">
-            
+
           <header class="navbar">
     <img src="./logotip-modified.png" alt="Logo" class="logo">
-    
+
     <div class="buttons">
         <a href="#home"><button>Home</button></a>
         <a href="#about"><button>About</button></a>
-        
+
         <!-- Portfolio Dropdown -->
         <div class="portfolio-dropdown">
             <button class="dropdown-btn">Portfolio ▾</button>
             <div class="dropdown-content">
-                <a href="https://apex-five-psi.vercel.app/" target="_blank">🔥 Trade Login Page</a>
-                <a href="https://apex-five-psi.vercel.app/" target="_blank">📊 Dashboard App</a>
-                <!-- Yangi loyihalar bo'lsa, shu yerga qo'shasiz -->
+                <a href="https://daftar-teal.vercel.app" target="_blank" rel="noopener">📒 Daftar (CRM)</a>
+                <a href="ZENITH_LIVE_LINK" target="_blank" rel="noopener">🛍 ZenithTech (do'kon)</a>
+                <a href="https://apex-five-psi.vercel.app/" target="_blank" rel="noopener">📊 Apex (Trading)</a>
+                <a href="https://samirjon018.github.io/OLX-Frontend/" target="_blank" rel="noopener">🛒 OLX klon</a>
             </div>
         </div>
 
-        <a href="#gallery"><button>Gallery</button></a>
+        <a href="#gallery"><button>Projects</button></a>
         <a href="#contact"><button>Contact</button></a>
-        
+
         <!-- Dark/Light rejim tugmasi -->
         <button id="theme-toggle" class="theme-btn">🌙</button>
     </div>
 </header>
 
             <!-- Asosiy tanishuv qismi (Hero Section) -->
-            <section class="hero-section">
+            <section id="home" class="hero-section">
                 <div class="hero-content">
                     <div class="content">
                         <h1>I am Samirjon</h1>
@@ -44,16 +45,16 @@
                             passionate about learning<br>
                             new technologies</h2>
                     </div>
-                    
+
                     <div class="icons">
-                        <img src="./twitter (2).png" alt="Twitter"> 
-                        <img src="./instagram.png" alt="Instagram"> 
-                        <img src="./social.png" alt="Social"> 
+                        <img src="./twitter (2).png" alt="Twitter">
+                        <img src="./instagram.png" alt="Instagram">
+                        <img src="./social.png" alt="Social">
                         <img src="./global.png" alt="Global">
                     </div>
-                        
+
                     <div class="center-button3">
-    <a href="https://github.com/Samirjon018" target="_blank" class="work-btn">
+    <a href="#gallery" class="work-btn">
         See My Work 🚀
     </a>
 </div>
@@ -67,23 +68,23 @@
             <!-- Statistika -->
             <section class="stats-container">
                 <div class="stat-card">
-                    <h2 class="stat-number">100k+</h2>
+                    <h2 class="stat-number">10k+</h2>
                     <p class="stat-label">Happy</p>
                 </div>
-               
+
                 <div class="stat-card">
-                    <h2 class="stat-number">100k+</h2>
+                    <h2 class="stat-number">10k+</h2>
                     <p class="stat-label">Ticket</p>
                 </div>
 
                 <div class="stat-card">
-                    <h2 class="stat-number">9.5/10</h2>
+                    <h2 class="stat-number">9/10</h2>
                     <p class="stat-label">Average Rating</p>
                 </div>
             </section>
 
             <!-- About Me -->
-            <section class="about-wrapper">
+            <section id="about" class="about-wrapper">
                 <div class="about-image">
                     <img src="./photo2.png" alt="Samirjon About Image">
                 </div>
@@ -97,35 +98,81 @@
                 </div>
             </section>
 
-            <!-- Check My Photo bo'limi -->
-            <section class="photo-section">
+            <!-- Loyihalar bo'limi -->
+            <section id="gallery" class="photo-section">
                 <div class="photo-header">
-                    <h3>Gallery</h3>
-                    <h2>Check The Photo</h2>
-                    <p>Mening eng sara ishlarim va fotolarim bilan tanishing</p>
+                    <h3>Projects</h3>
+                    <h2>My Projects</h2>
+                    <p>O'zim yaratgan loyihalar: jonli saytni ochib ko'ring yoki kodini GitHub da ko'ring</p>
                 </div>
 
-                <div class="photo-grid">
-                    <div class="photo-card">
-                        <img src="./ZeinthTech.png" alt="Photo 1">
-                        <div class="photo-overlay">
-                            <span>Web Design</span>
-                        </div>
-                    </div>
+                <div class="project-grid">
 
-                    <div class="photo-card">
-                        <img src="./apexsite.png" alt="Photo 2">
-                        <div class="photo-overlay">
-                            <span>Development</span>
+                    <!-- Daftar -->
+                    <article class="project-card">
+                        <img class="project-thumb" src="./daftar.png" alt="Daftar CRM">
+                        <div class="project-body">
+                            <h3>Daftar</h3>
+                            <p>Telegram va Instagram sotuvchilari uchun CRM: buyurtmalar, mijozlar, dashboard va daromad grafigi, qorong'i rejim, CSV eksport.</p>
+                            <div class="project-tags">
+                                <span>React</span><span>Vite</span><span>React Router</span><span>Recharts</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://daftar-teal.vercel.app" target="_blank" rel="noopener">Jonli sayt ↗</a>
+                                <a class="project-link" href="https://github.com/Samirjon018/Daftar" target="_blank" rel="noopener">GitHub</a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="photo-card">
-                        <img src="./oqtepa.png" alt="Photo 3">
-                        <div class="photo-overlay">
-                            <span>Creative</span>
+                    <!-- ZenithTech -->
+                    <article class="project-card">
+                        <img class="project-thumb" src="./ZeinthTech.png" alt="ZenithTech do'koni">
+                        <div class="project-body">
+                            <h3>ZenithTech</h3>
+                            <p>Elektronika va gadjetlar onlayn do'koni: katalog, qidiruv va saralash, savat, buyurtma rasmiylashtirish va mahsulot sahifasi.</p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://zenithtech.vercel.app" target="_blank" rel="noopener">Jonli sayt ↗</a>
+                                <a class="project-link" href="https://github.com/Samirjon018/ZenithTech" target="_blank" rel="noopener">GitHub</a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Apex -->
+                    <article class="project-card">
+                        <img class="project-thumb" src="./apexsite.png" alt="Apex trading sayti">
+                        <div class="project-body">
+                            <h3>Apex</h3>
+                         <p>Interaktiv interfeysli trading platformasi: kirish sahifasi va dashboard, GSAP animatsiyalari bilan.</p>
+                        <div class="project-tags">
+                          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GSAP</span>
+                             </div>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://apex-five-psi.vercel.app/" target="_blank" rel="noopener">Jonli sayt ↗</a>
+                                 <a class="project-link" href="https://github.com/Samirjon018/Apex" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- OLX klon -->
+                    <article class="project-card">
+                        <div class="project-thumb project-thumb-placeholder"><img class="project-thumb" src="./olx.png" alt="OLX klon"></div>
+                        <div class="project-body">
+                            <h3>OLX klon</h3>
+                            <p>OLX e'lonlar saytining frontend nusxasi.</p>
+                            <!-- TEKSHIRING: texnologiyalarni o'zingiz ishlatganlariga moslang -->
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="project-link primary" href="https://samirjon018.github.io/OLX-Frontend/" target="_blank" rel="noopener">Jonli sayt ↗</a>
+                                <a class="project-link" href="https://github.com/Samirjon018/OLX-Frontend" target="_blank" rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </section>
 
@@ -135,8 +182,8 @@
     <!-- Rejimni o'zgartiruvchi JavaScript kodi -->
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
-        
-        // Oldin tanlangan rej userni eslab qolish uchun (localStorage)
+
+        // Oldin tanlangan rejimni eslab qolish uchun (localStorage)
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-mode');
             themeToggleBtn.textContent = '☀️';
@@ -144,7 +191,7 @@
 
         themeToggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            
+
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('theme', 'dark');
                 themeToggleBtn.textContent = '☀️';
@@ -153,11 +200,7 @@
                 themeToggleBtn.textContent = '🌙';
             }
         });
-    </script>   
-
-
-
-
+    </script>
 
 <!-- Contact Section (Aloqa bo'limi) -->
 <section id="contact" class="contact-section">
@@ -174,10 +217,13 @@
                 <span>abdurakhimov.069@gmail.com</span>
             </a>
             <a href="https://t.me/your_telegram_username" target="_blank" class="contact-item">
-                <span class="contact-icon">✈️️</span>
+                <span class="contact-icon">✈️</span>
                 <span>Telegram: @Samirjon018</span>
             </a>
-           
+            <a href="https://github.com/Samirjon018" target="_blank" rel="noopener" class="contact-item">
+                <span class="contact-icon">💻</span>
+                <span>GitHub: Samirjon018</span>
+            </a>
         </div>
 
         <div class="contact-action">
@@ -187,6 +233,5 @@
         </div>
     </div>
 </section>
-</div>
 </body>
 </html>

@@ -602,3 +602,149 @@ body.dark-mode .contact-item:hover {
 }
 
 
+/* ==========================================
+   LOYIHALAR (PROJECT CARDS)
+   ========================================== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(79, 70, 229, 0.18);
+}
+
+.project-thumb {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.project-thumb-placeholder {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    font-size: 56px;
+}
+
+.project-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+.project-body h3 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 20px;
+}
+
+.project-body p {
+    flex: 1;
+    margin: 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-tags span {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.project-link {
+    padding: 9px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.project-link:hover {
+    border-color: #4f46e5;
+    color: #4f46e5;
+}
+
+.project-link.primary {
+    border-color: transparent;
+    background: blueviolet;
+    color: aliceblue;
+}
+
+.project-link.primary:hover {
+    background: #6d28d9;
+    color: aliceblue;
+}
+
+/* Qorong'i rejim */
+body.dark-mode .project-card {
+    border-color: #334155;
+    background: #1e293b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .project-body h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .project-body p {
+    color: #94a3b8;
+}
+
+body.dark-mode .project-tags span {
+    background: rgba(99, 102, 241, 0.2);
+    color: #a5b4fc;
+}
+
+body.dark-mode .project-link {
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-mode .project-link:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+body.dark-mode .project-link.primary {
+    border-color: transparent;
+    color: aliceblue;
+}
